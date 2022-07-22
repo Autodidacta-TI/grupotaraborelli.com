@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+   <data>
+
+    <record id="view_account_export_sircar_rionegro_form" model="ir.ui.view">
+         <field name="name">account.export.sircar.rionegro.form</field>
+         <field name="model">account.export.sircar.rionegro</field>
+         <field name="arch" type="xml">
+            <form>
+		<header>
+			<button name="compute_sircar_rionegro_data" string="Generar TXT SIRCAR Rio Negro" type="object" />
+		</header>
+		<sheet>
+			<group>
+				<field name="name" />
+				<field name="date_from" />
+				<field name="date_to" />
+				<field name="tax_withholding" />
+			</group>
+			<group string="Archivo y datos">
+				<field name="export_sircar_rionegro_file_ret" />
+				<field name="export_sircar_rionegro_data_ret" readonly="1"/>
+				<field name="export_sircar_rionegro_file_per" />
+				<field name="export_sircar_rionegro_data_per" readonly="1"/>
+			</group>
+		</sheet>
+            </form>
+         </field>
+    </record>
+
+    <record id="view_account_export_sircar_rionegro" model="ir.ui.view">
+         <field name="name">account.export.sircar.rionegro.tree</field>
+         <field name="model">account.export.sircar.rionegro</field>
+         <field name="arch" type="xml">
+            <tree>
+		<field name="name" />
+		<field name="date_from" />
+		<field name="date_to" />
+            </tree>
+         </field>
+    </record>
+
+
+
+        <record id="action_account_export_sircar_rionegro" model="ir.actions.act_window">
+            <field name="name">Exportaciones de SRICAR Rio Negro</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.export.sircar.rionegro</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_account_export_sircar_rionegro"
+                  action="action_account_export_sircar_rionegro"
+                  parent="l10n_ar.account_reports_ar_statements_menu"
+                  sequence="6"/>
+
+
+       </data>
+</odoo>

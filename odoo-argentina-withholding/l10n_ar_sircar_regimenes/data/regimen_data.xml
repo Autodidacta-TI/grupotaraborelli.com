@@ -1,0 +1,898 @@
+<odoo>
+    <!-- NEUQUEN -->
+    <record model="sircar.regimenes" id="regimen_sircar_1">
+        <field name="jurisdiccion" ref="base.state_ar_q"/>
+        <field name="n_jur">915</field>
+        <field name="n_reg">030</field>
+        <field name="vigente">si</field>
+        <field name="desde">Inicio</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">R</field>
+        <field name="desc">Retenciones IIBB</field>
+    </record>
+    <record model="sircar.regimenes" id="regimen_sircar_2">
+        <field name="jurisdiccion" ref="base.state_ar_q"/>
+        <field name="n_jur">915</field>
+        <field name="n_reg">040</field>
+        <field name="vigente">si</field>
+        <field name="desde">Inicio</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">P</field>
+        <field name="desc">Percepciones IIBB</field>
+    </record>
+
+    <!-- RIO NEGRO -->
+    <record model="sircar.regimenes" id="regimen_sircar_3">
+        <field name="jurisdiccion" ref="base.state_ar_r"/>
+        <field name="n_jur">916</field>
+        <field name="n_reg">010</field>
+        <field name="vigente">si</field>
+        <field name="desde">Inicio</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">R</field>
+        <field name="desc">ANEXO I - Empresas públicas, cooperativas, asociaciones, etc.</field>
+    </record>
+    <record model="sircar.regimenes" id="regimen_sircar_4">
+        <field name="jurisdiccion" ref="base.state_ar_r"/>
+        <field name="n_jur">916</field>
+        <field name="n_reg">020</field>
+        <field name="vigente">si</field>
+        <field name="desde">Inicio</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">R</field>
+        <field name="desc">ANEXO II - Empresas comerciales y prestadoras de servicios</field>
+    </record>
+    <record model="sircar.regimenes" id="regimen_sircar_5">
+        <field name="jurisdiccion" ref="base.state_ar_r"/>
+        <field name="n_jur">916</field>
+        <field name="n_reg">030</field>
+        <field name="vigente">si</field>
+        <field name="desde">Inicio</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">R</field>
+        <field name="desc">ANEXO III - Honorarios y prestaciones</field>
+    </record>
+    <record model="sircar.regimenes" id="regimen_sircar_6">
+        <field name="jurisdiccion" ref="base.state_ar_r"/>
+        <field name="n_jur">916</field>
+        <field name="n_reg">040</field>
+        <field name="vigente">si</field>
+        <field name="desde">Inicio</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">R</field>
+        <field name="desc">NEXO IV - Tarjetas de compra y de crédito</field>
+    </record>
+    <record model="sircar.regimenes" id="regimen_sircar_7">
+        <field name="jurisdiccion" ref="base.state_ar_r"/>
+        <field name="n_jur">916</field>
+        <field name="n_reg">050</field>
+        <field name="vigente">si</field>
+        <field name="desde">Inicio</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">R</field>
+        <field name="desc">ANEXO V - Juegos de azar</field>
+    </record>
+    <record model="sircar.regimenes" id="regimen_sircar_8">
+        <field name="jurisdiccion" ref="base.state_ar_r"/>
+        <field name="n_jur">916</field>
+        <field name="n_reg">060</field>
+        <field name="vigente">si</field>
+        <field name="desde">Inicio</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">R</field>
+        <field name="desc">ANEXO VI – Fletes</field>
+    </record>
+    <record model="sircar.regimenes" id="regimen_sircar_9">
+        <field name="jurisdiccion" ref="base.state_ar_r"/>
+        <field name="n_jur">916</field>
+        <field name="n_reg">080</field>
+        <field name="vigente">si</field>
+        <field name="desde">Inicio</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">R</field>
+        <field name="desc">ANEXO VIII - Compañias de seguros</field>
+    </record>
+    <record model="sircar.regimenes" id="regimen_sircar_10">
+        <field name="jurisdiccion" ref="base.state_ar_r"/>
+        <field name="n_jur">916</field>
+        <field name="n_reg">100</field>
+        <field name="vigente">si</field>
+        <field name="desde">Inicio</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">R</field>
+        <field name="desc">ANEXO IX - COMERCIO ELECTRONICO</field>
+    </record>
+    <record model="sircar.regimenes" id="regimen_sircar_11">
+        <field name="jurisdiccion" ref="base.state_ar_r"/>
+        <field name="n_jur">916</field>
+        <field name="n_reg">070</field>
+        <field name="vigente">si</field>
+        <field name="desde">Inicio</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">P</field>
+        <field name="desc">ANEXO VII – Percepciones</field>
+    </record>
+    <record model="sircar.regimenes" id="regimen_sircar_12">
+        <field name="jurisdiccion" ref="base.state_ar_r"/>
+        <field name="n_jur">916</field>
+        <field name="n_reg">090</field>
+        <field name="vigente">si</field>
+        <field name="desde">Inicio</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">P</field>
+        <field name="desc">ANEXO IX - PERCEPCIONES COMERCIO ELECTRONICO</field>
+    </record>
+    <record model="sircar.regimenes" id="regimen_sircar_13">
+        <field name="jurisdiccion" ref="base.state_ar_r"/>
+        <field name="n_jur">916</field>
+        <field name="n_reg">110</field>
+        <field name="vigente">si</field>
+        <field name="desde">11/2020</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">P</field>
+        <field name="desc">SERVICIOS DIGITALES DEL EXTERIOR - RG 808/2020</field>
+    </record>
+
+    <!-- MENDOZA -->
+    <record model="sircar.regimenes" id="regimen_sircar_14">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">101</field>
+        <field name="vigente">si</field>
+        <field name="desde">04/2022</field>
+        <field name="hasta"></field>
+        <field name="id_tipo">R</field>
+        <field name="desc">RETENCIÓN RG 19/12 ART 5 C.LOCAL</field>
+    </record>
+    <record model="sircar.regimenes" id="regimen_sircar_16">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">102</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12 ART 5 C.LOCAL RIESGO FISCAL /NO INSCRIPTO</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_17">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">103</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12 ART 5 C.MULT.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_18">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">104</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12 ART 5 C.MULT. RIESGO FISCAL /NO INSCRIPTO</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_19">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">105</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. A)</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_20">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">106</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. A) RIESGO FISCAL /NO INSCRIPTO</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_21">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">107</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. B)</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_22">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">108</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. B) RIESGO FISCAL /NO INSCRIPTO</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_23">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">109</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. C)</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_24">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">110</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. C) RIESGO FISCAL /NO INSCRIPTO</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_25">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">111</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. D)</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_26">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">112</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. D) RIESGO FISCAL /NO INSCRIPTO</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_27">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">113</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. E)</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_28">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">114</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. E) RIESGO FISCAL /NO INSCRIPTO</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_29">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">115</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. F)</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_30">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">116</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. F) RIESGO FISCAL /NO INSCRIPTO</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_31">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">117</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. G)</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_32">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">118</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. G) RIESGO FISCAL /NO INSCRIPTO</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_33">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">119</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. H)</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_34">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">120</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. H) RIESGO FISCAL /NO INSCRIPTO</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_35">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">121</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. I)</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_36">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">122</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. I) RIESGO FISCAL /NO INSCRIPTO</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_37">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">123</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. J)</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_38">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">124</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">R</field>
+    <field name="desc">RETENCIÓN RG 19/12  ART 5 INC. J) RIESGO FISCAL /NO INSCRIPTO</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_39">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">201</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG30/99 ACT. ADJ. ART 6</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_40">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">202</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG30/99 ACT. ADJ. ART 6 NO INSCRIPTO/RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_41">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">203</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO I C. LOCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_42">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">204</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO I C. LOCAL NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_43">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">205</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO I C. MULT.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_44">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">206</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO I C. MULT. NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_45">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">207</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO I AS. COOP.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_46">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">208</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO I AS. COOP. NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_47">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">209</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO II C. LOCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_48">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">210</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO II C. LOCAL NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_49">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">211</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO II C. MULT.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_50">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">212</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO II C. MULT. NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_51">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">213</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO II AS. COOP.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_52">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">214</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO II AS. COOP. NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_53">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">215</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO III C. LOCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_54">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">216</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO III C. LOCAL NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_55">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">217</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO III C. MULT.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_56">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">218</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO III C. MULT. NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_58">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">219</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IV INC A) C. LOCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_59">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">220</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IV INC A) C. LOCAL NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_60">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">221</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IV INC A) C. MULT.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_61">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">222</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IV INC A) C. MULT. NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_62">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">223</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IV INC A) AS. COOP.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_63">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">224</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IV INC A) AS. COOP. NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_64">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">225</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IV INC B) C. LOCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_65">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">226</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IV INC B) C. LOCAL NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_66">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">227</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IV INC B) C. MULT.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_67">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">228</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IV INC B) C. MULT. NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_68">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">229</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IV INC B) AS. COOP.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_69">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">230</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IV INC B) AS. COOP. NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_70">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">231</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO V C. LOCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_71">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">232</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO V C. LOCAL NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_72">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">233</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO V C. MULT.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_73">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">234</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO V C. MULT. NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_74">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">235</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO VI</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_75">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">236</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO VI NO INSCRIPTO/RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_76">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">237</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO VII C. LOCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_77">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">238</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO VII C. LOCAL NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_78">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">239</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO VII C. MULT.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_79">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">240</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO VII C. MULT. NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_80">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">241</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO VIII C. LOCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_81">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">242</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO VIII C. LOCAL NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_82">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">243</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO VIII C. MULT.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_83">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">244</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO VIII C. MULT. NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_84">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">245</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IX</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_85">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">246</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO IX NO INSCRIPTO/RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_86">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">247</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO X STAND</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_87">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">248</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO X AMBULANTE</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_88">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">249</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO XI C. LOCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_89">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">250</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO XI C. LOCAL NO INSC./RIESGO FISCAL</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_90">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">251</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO XI C. MULT.</field>
+</record>
+    <record model="sircar.regimenes" id="regimen_sircar_91">
+        <field name="jurisdiccion" ref="base.state_ar_m"/>
+        <field name="n_jur">913</field>
+        <field name="n_reg">252</field>
+    <field name="vigente">si</field>
+    <field name="desde">04/2022</field>
+    <field name="hasta"></field>
+    <field name="id_tipo">P</field>
+    <field name="desc">PERCEPCIÓN RG 30/99 ANEXO XI C. MULT. NO INSC./RIESGO FISCAL</field>
+</record>
+
+</odoo>
