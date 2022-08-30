@@ -1,0 +1,98 @@
+<odoo>
+  <data>
+
+
+ 
+   <record id="journales_asientos" model="ir.ui.view">
+        <field name="name">journales.asientos</field>
+        <field name="model">account.move.line</field>
+        <field name="inherit_id" ref="account.view_move_line_tree_grouped"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree[1]" position="replace">
+              
+<tree string="Journal Items" create="false" expand="context.get('expand', False)" multi_edit="1">
+                    <field name="date" optional="show" readonly="1"/>
+                    <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}" optional="show"/>
+                   
+                    <field name="asiento" string="Número de asiento"/>
+
+                   
+                    <field name="account_id" string="Cuenta"/>
+               
+
+                    <field name="statement_id" invisible="1" optional="show"/>
+                    <field name="partner_id" invisible="1" readonly="1"/>
+                    <field name="ref" invisible="1" optional="show"/>
+                    <field name="name" invisible="1" optional="show"/>
+                    <field name="reconciled" invisible="1"/>
+                    <field name="matching_number" string="Matching" optional="show"/>
+                    <field name="reconcile_model_id" invisible="1"/>
+                    <field name="date_maturity" optional="hide"/>
+                    <field name="analytic_account_id" optional="hide" groups="analytic.group_analytic_accounting" attrs="{'readonly':[('parent_state','=','posted')]}"/>
+                    <field name="analytic_tag_ids" optional="hide" readonly="1" groups="analytic.group_analytic_tags"/>
+                    <field name="debit" sum="Total Debit" readonly="1"/>
+                    <field name="credit" sum="Total Credit" readonly="1"/>
+                    <field name="balance" sum="Total Balance" readonly="1" optional="hide"/>
+                    <field name="amount_currency" readonly="1" groups="base.group_multi_currency"/>
+                    <field name="currency_id" readonly="1" groups="base.group_multi_currency" optional="hide" string="Original Currency"/>
+                    <field name="company_currency_id" invisible="1"/>
+                    <field name="parent_state" invisible="1"/>
+                    <field name="tax_ids" widget="many2many_tags" width="0.5" optional="hide" readonly="1"/>
+                    <field name="tax_tag_ids" widget="many2many_tags" width="0.5" optional="hide" string="Tax Grids" options="{'no_open': True, 'no_create': True}" domain="[('applicability', '=', 'taxes')]"/>
+                    <groupby name="move_id">
+                        <field name="state" invisible="0"/>
+                        <button name="edit" type="edit" icon="fa-edit" title="Edit"/>
+                        <button name="action_post" states="draft" icon="fa-check" title="Post" type="object" groups="account.group_account_invoice"/>
+                        <button name="193" states="posted" title="Reverse" icon="fa-refresh" type="action" groups="account.group_account_invoice"/>
+                        <button name="action_duplicate" icon="fa-files-o" title="Duplicate" type="object" groups="account.group_account_invoice"/>
+                    </groupby>
+                </tree>
+           </xpath>
+        </field>
+    </record>
+   
+   
+
+    <record model="ir.actions.act_window" id="journales.action_window_01">
+      <field name="name">Lista contable</field>
+      <field name="res_model">account.move.line</field>
+      <field name="view_mode">tree</field>
+    </record>
+    
+<menuitem
+        parent="account.menu_finance_reports"
+        id="menu_oca_reports"
+        name="OCA accounting reports"
+        groups="account.group_account_manager,account.group_account_user"
+    />
+
+   
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="journales.action_server">
+      <field name="name">journales server</field>
+      <field name="model_id" ref="model_journales_journales"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+
+
+
+    
+ 
+    <menuitem name="Lista" id="journales.menu_1_list" 
+              action="journales.action_window_01"
+              parent="account.menu_finance_reports"/>
+    
+
+  </data>
+</odoo>
