@@ -43,13 +43,13 @@ class BeeckerOdooPartnerApi(http.Controller):
             uid = request.session.authenticate(db, login, password)
             if uid:
                 if name:
-                    partners = request.env['res.partner'].search_read([('name', 'like', name)], offset=offset, fields=['id'])
+                    partners = request.env['res.partner'].search_read([('name', 'like', name)], offset=offset, fields=['id', 'name'])
                     return partners
                 if email:
-                    partners = request.env['res.partner'].search_read([('email', '=', email)], offset=offset, fields=['id'])
+                    partners = request.env['res.partner'].search_read([('email', '=', email)], offset=offset, fields=['id', 'name'])
                     return partners
                 if vat:
-                    partners = request.env['res.partner'].search_read([('vat', '=', vat)], offset=offset, fields=['id'])
+                    partners = request.env['res.partner'].search_read([('vat', '=', vat)], offset=offset, fields=['id', 'name'])
                     return partners
         except Exception as e:
             return {'status': "Error", 'error': str(e)}
