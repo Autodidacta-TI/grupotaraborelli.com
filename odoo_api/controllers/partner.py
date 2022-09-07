@@ -55,7 +55,7 @@ class BeeckerOdooPartnerApi(http.Controller):
             return {'status': "Error", 'error': str(e)}
 
     @http.route('/odoo-api/partners/create', type="json", auth='none', cors=CORS)
-    def partners_create(self, db=None, login=None, password=None, name='Demo', email=False, street=False, street2=False, country=False, state=False, city=False, zip=False, function=False, phone=False, mobile=False, website=False, **kw):
+    def partners_create(self, db=None, login=None, password=None, name='Demo', email=False, street=False, street2=False, country=False, state=False, city=False, zip=False, function=False, phone=False, mobile=False, website=False, vat=False, id_type=4, resp_id=1, **kw):
         try:
             uid = request.session.authenticate(db, login, password)
             if uid:
@@ -73,8 +73,24 @@ class BeeckerOdooPartnerApi(http.Controller):
                         state_id = state_id[0]['id']
                     else:
                         state_id = False
-                _logger.info(country_id)
-                partner = request.env['res.partner'].sudo().create({'name': name, 'email': email, 'street': street, 'street2': street2, 'country_id': country_id, 'state_id': state_id, 'city': city, 'zip': zip, 'function': function, 'phone': phone, 'mobile': mobile, 'website': website})
+
+                partner = request.env['res.partner'].sudo().create({
+                    'name': name,
+                    'email': email,
+                    'street': street,
+                    'street2': street2,
+                    'country_id': country_id,
+                    'state_id': state_id,
+                    'city': city,
+                    'zip': zip,
+                    'function': function,
+                    'phone': phone,
+                    'mobile': mobile,
+                    'website': website,
+                    'l10n_latam_identification_type_id': id_type,
+                    'vat': vat,
+                    'l10n_ar_afip_responsability_type_id': resp_id
+                })
                 return {
                     'name': partner.name,
                     'id': partner.id,
