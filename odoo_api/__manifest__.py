@@ -3,10 +3,10 @@
     'name': "odoo_api",
 
     'summary': """
-        Odoo API XMLRPC Style""",
+        Odoo API XMLRPC Style custom for Taraborelli""",
 
     'description': """
-        Odoo API XMLRPC Style
+        Odoo API XMLRPC Style for Taraborelli
     """,
 
     'author': "Codize",
