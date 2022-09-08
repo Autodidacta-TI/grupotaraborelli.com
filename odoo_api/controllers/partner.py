@@ -89,7 +89,7 @@ class BeeckerOdooPartnerApi(http.Controller):
                     'website': website,
                     'l10n_latam_identification_type_id': id_type,
                     'vat': vat,
-                    'l10n_ar_afip_responsability_type_id': resp_id
+                    'l10n_ar_afip_responsibility_type_id': resp_id
                 })
                 return {
                     'name': partner.name,
