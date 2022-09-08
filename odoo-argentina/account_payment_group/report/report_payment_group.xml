@@ -39,9 +39,15 @@
 			</div><!--END DOCUMENT LETTER-->
 			<!--TIPO,NRO Y FECHA FACTURA-->
 			<div class="col-5 text-left" name="company_address" style="padding-left: 80px !important;">
-			  <h3>
+			<t t-if="o.partner_type == 'supplier'">
+			   <h5>Orden de Pago <span t-esc="o.document_number" /></h5>
+			</t>
+			<t t-if="o.partner_type == 'customer'">
+			   <h5>Recibo de Pago <span t-esc="o.document_number" /></h5>
+			</t>
+			  <!--h3>
 					RECIBO
-			  </h3>
+			  </h3-->
 			  <span t-if="o.state == 'confirmed' or o.state == 'posted' or o.state == 'draft'">
 					  Fecha: <span t-field="o.payment_date"/><br/>
 			  </span>
@@ -73,7 +79,13 @@
   		 <!-- CLIENTE  -->
   		 <div class="row" style="border: 1px solid black; border-radius: 10px;">
   		   <div class="col-2">
-  			 <strong><span>Cliente</span></strong>
+  		   	<t t-if="o.partner_type == 'supplier'">
+			   <span><strong>Proveedor</strong></span>
+			</t>
+			<t t-if="o.partner_type == 'customer'">
+			   <span><strong>Cliente</strong></span>
+			</t>
+  			 <!--strong><span>Cliente</span></strong-->
   		   </div>
   		   <div name="invoice_address" class="col-4">
   			 <address t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;], &quot;no_marker&quot;: True}"/>
