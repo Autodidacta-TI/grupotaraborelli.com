@@ -61,18 +61,18 @@ class BeeckerOdooPartnerApi(http.Controller):
             if uid:
                 country_id = False
                 state_id = False
-                if country:
-                    country_id = request.env['res.country'].search_read([('name', 'like', country)], limit=1, fields=['id'])
-                    if country_id:
-                        country_id = country_id[0]['id']
-                    else:
-                        country_id = False
-                if state:
-                    state_id = request.env['res.country.state'].search_read([('name', 'like', state)], limit=1, fields=['id'])
-                    if state_id:
-                        state_id = state_id[0]['id']
-                    else:
-                        state_id = False
+                #if country:
+                #    country_id = request.env['res.country'].search_read([('name', 'like', country)], limit=1, fields=['id'])
+                #    if country_id:
+                #        country_id = country_id[0]['id']
+                #    else:
+                #        country_id = False
+                #if state:
+                #    state_id = request.env['res.country.state'].search_read([('name', 'like', state)], limit=1, fields=['id'])
+                #    if state_id:
+                #        state_id = state_id[0]['id']
+                #    else:
+                #        state_id = False
 
                 partner = request.env['res.partner'].sudo().create({
                     'name': name,
