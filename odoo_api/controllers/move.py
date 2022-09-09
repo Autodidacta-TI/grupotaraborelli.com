@@ -18,6 +18,6 @@ class RentylOdooMoveApi(http.Controller):
             uid = request.session.authenticate(db, login, password)
             if uid:
                 move = request.env['account.move'].search_read([('name', '=', name),('company_id', '=', company)], limit=1, fields=['name', 'id', 'l10n_ar_afip_auth_code'])
-                return {'status': 'Ok', 'move_id': move.id, 'move_name': move.name, 'cae': move.l10n_ar_afip_auth_code}
+                return {'status': 'Ok', 'move_id': move[0]['id'], 'move_name': move[0]['name'], 'cae': move[0]['l10n_ar_afip_auth_code']}
         except Exception as e:
             return {'status': "Error", 'error': str(e)}
