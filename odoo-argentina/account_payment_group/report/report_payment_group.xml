@@ -33,8 +33,15 @@
 			<!--DOCUMENT LETTER-->
 			<div class="col-2 text-center">
 			  <div class="card" style="margin:0px;">
-				<div class="card-header" style="font-size: 48px;padding:0px;">REC</div>
-				<div class="card-body" style="height: 20px;padding:0px;"><br/></div>
+			  	<t t-if="o.partner_type == 'supplier'">
+			   		<div class="card-header" style="font-size: 48px;padding:0px;">PO</div>
+					<div class="card-body" style="height: 20px;padding:0px;"><br/></div>
+				</t>
+				<t t-if="o.partner_type == 'customer'">
+			   		<div class="card-header" style="font-size: 48px;padding:0px;">REC</div>
+					<div class="card-body" style="height: 20px;padding:0px;"><br/></div>
+				</t>
+				
 			  </div>
 			</div><!--END DOCUMENT LETTER-->
 			<!--TIPO,NRO Y FECHA FACTURA-->
