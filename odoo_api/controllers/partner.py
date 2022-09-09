@@ -10,7 +10,7 @@ import xmlrpc.client
 _logger = logging.getLogger(__name__)
 CORS = '*'
 
-class BeeckerOdooPartnerApi(http.Controller):
+class RentylOdooPartnerApi(http.Controller):
 
     @http.route('/odoo-api/partners/count', type="json", auth='none', cors=CORS)
     def partners_count(self, db=None, login=None, password=None, filters=[], **kw):

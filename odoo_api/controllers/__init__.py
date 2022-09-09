@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import controllers, partner
+from . import controllers, partner, move
