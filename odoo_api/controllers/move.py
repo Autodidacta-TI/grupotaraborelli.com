@@ -13,11 +13,11 @@ CORS = '*'
 class RentylOdooMoveApi(http.Controller):
 
     @http.route('/odoo-api/move/get', type="json", auth='none', cors=CORS)
-    def move_get(self, db=None, login=None, password=None, number=False, company=1, **kw):
+    def move_get(self, db=None, login=None, password=None, name=False, company=1, **kw):
         try:
             uid = request.session.authenticate(db, login, password)
             if uid:
-                move = request.env['account.move'].search_read([('l10n_latam_document_number', '=', number),('company_id', '=', company)], limit=1, fields=['name', 'id'])
-                return {'status': 'Ok', 'move_id': move.id, 'move_name': move.name}
+                move = request.env['account.move'].search_read([('name', '=', name),('company_id', '=', company)], limit=1, fields=['name', 'id', 'l10n_ar_afip_auth_code'])
+                return {'status': 'Ok', 'move_id': move.id, 'move_name': move.name, 'cae': move.l10n_ar_afip_auth_code}
         except Exception as e:
             return {'status': "Error", 'error': str(e)}
