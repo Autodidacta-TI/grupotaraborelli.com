@@ -154,12 +154,12 @@
 	        </tfoot>
 	      </table>
 
-		  <h5>Facturas Relacionadas</h5>
+		  <h5>Comprobantes Aplicados</h5>
                 <table class="table">
                     <thead>
                         <tr>
-                            <th style="width:50%;padding:5px">Factura</th>
-                            <th style="width:50%;padding:5px">Monto de Facturas</th>
+                            <th style="width:50%;padding:5px">Comprobante</th>
+                            <th style="width:50%;padding:5px">Monto de Comprobante</th>
                             <th>Monto Pagado</th>
                         </tr>
                     </thead>
