@@ -230,7 +230,8 @@ class JournalLedgerXslx(models.AbstractModel):
                 currency_data = currency_ids_data.get(line["currency_id"], False)
                 currency_name = ""
                 account_data = account_ids_data.get(line["account_id"], False)
-                account_name = ""
+                account_name = account_data["name"]
+                account_code = account_data["code"]
                 move_data = move_ids_data.get(line["move_id"], False)
                 move_entry = move_data and move_data["entry"] or ""
                 line["partner"] = self._get_partner_name(
