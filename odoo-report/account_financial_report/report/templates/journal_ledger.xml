@@ -175,10 +175,10 @@
             <t t-if="with_auto_sequence">
                 <div class="act_as_cell" name="Sequence" />
             </t>
-            <div class="act_as_cell" name="entry" />
+            <!--div class="act_as_cell" name="entry" />
             <div class="act_as_cell" name="date" />
             <div class="act_as_cell" name="account" />
-            <div class="act_as_cell" name="partner" />
+            <div class="act_as_cell" name="partner" /-->
             <div class="act_as_cell" name="label" />
             <div class="act_as_cell" name="taxes" />
             <div class="act_as_cell amount" name="debit">
